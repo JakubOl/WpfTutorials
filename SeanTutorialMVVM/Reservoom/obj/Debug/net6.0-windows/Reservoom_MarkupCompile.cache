@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\jakub\Desktop\Main\C#\SeanTutorialMVVM\Reservoom\obj\Debug\net6.0-windows\
+C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\obj\Debug\net6.0-windows\
 Reservoom
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\jakub\Desktop\Main\C#\SeanTutorialMVVM\Reservoom\App.xaml
-11407045341
+C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\App.xaml
+3-651115779
 
-81971312459
+15-1439442586
 1942030480316
-MainWindow.xaml;
+MainWindow.xaml;Views\MakeReservationView.xaml;Views\ReservationListingView.xaml;
 
 False
 
