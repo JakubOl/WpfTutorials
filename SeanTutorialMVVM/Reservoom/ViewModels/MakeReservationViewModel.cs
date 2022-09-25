@@ -145,7 +145,7 @@ namespace Reservoom.ViewModels
             SubmitCommand = new MakeReservationCommand(this, hotelStore, reservationViewNavigationService);
             CancelCommand = new NavigateCommand(reservationViewNavigationService);
 
-            _propertyNameToErrorsDictionary = new Dictionary<string, List<string>>
+            _propertyNameToErrorsDictionary = new Dictionary<string, List<string>>();
         }
 
         public IEnumerable GetErrors(string propertyName)
