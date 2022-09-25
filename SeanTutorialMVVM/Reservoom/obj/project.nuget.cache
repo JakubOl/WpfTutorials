@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XJ6nHhJntXHMxnrlfMU2X2T281D/7l5xOmOMD9MvgCHoQN7DhLpWEAO73as96NAwpIAWo5KtxjuQcIEir9Sq/Q==",
+  "dgSpecHash": "gu09HppmwFzpvQ0QTLxnul9WVoSOJVQTqwYLnntmDr+M0+Xo5opIC9kfGWnR9goGIm1759vSK9YJrBZBvock7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\WPFTutorials\\SeanTutorialMVVM\\Reservoom\\Reservoom.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakub\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\loadingspinner.wpf\\1.0.0\\loadingspinner.wpf.1.0.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.17\\microsoft.data.sqlite.core.5.0.17.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

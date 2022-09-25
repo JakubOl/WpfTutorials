@@ -25,6 +25,8 @@ namespace Reservoom.Services.ReservationProviders
             {
                 IEnumerable<ReservationDTO> reservationDTOs = await context.Reservations.ToListAsync();
 
+                await Task.Delay(2000);
+
                 return reservationDTOs.Select(r => new Reservation(new RoomID(r.FloorNumber, r.RoomNumber), r.Username, r.StartTime, r.EndTime));
             }
         }

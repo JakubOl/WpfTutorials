@@ -30,11 +30,11 @@ namespace Reservoom.Models
 
         public async Task AddReservation(Reservation reservation)
         {
-            var conflictingResevation = await _reservationConflictValidator.GetConflictingReservation(reservation);
+            var conflictingReservation = await _reservationConflictValidator.GetConflictingReservation(reservation);
 
-            if(conflictingResevation != null)
+            if(conflictingReservation != null)
             {
-                throw new ReservationConflictException(conflictingResevation, reservation);
+                throw new ReservationConflictException(conflictingReservation, reservation);
             }
 
             await _reservationCreator.CreateReservation(reservation);

@@ -82,3 +82,4 @@ C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\bin\Debug
 C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\obj\Debug\net6.0-windows\Reservoom.csproj.CopyComplete
+C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SeanTutorialMVVM\Reservoom\bin\Debug\net6.0-windows\LoadingSpinnerControl.dll
