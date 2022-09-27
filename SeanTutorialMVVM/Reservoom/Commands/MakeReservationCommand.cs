@@ -58,12 +58,6 @@ namespace Reservoom.Commands
                 _makeReservationViewModel.EndDate
                 );
 
-            if(reservation.StartTime > reservation.EndTime)
-            {
-                MessageBox.Show("End of the reservation can't be before start of reservation", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }
-
             try
             {
                 await _hotelStore.MakeReservation(reservation);

@@ -1,5 +1,4 @@
 ﻿using Reservoom.Commands;
-using Reservoom.Models;
 using Reservoom.Services;
 using Reservoom.Stores;
 using System;
@@ -7,8 +6,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Reservoom.ViewModels
