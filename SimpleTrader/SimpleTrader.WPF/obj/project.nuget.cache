@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "T9HLcLQA2C13fpi739u0a8hoVPyzpj6VyytrXXuYdlG2C/9GOI5o6t92ZYu92T50KIgZbsJ1FMBx2aHnCCZ66g==",
+  "dgSpecHash": "rxarhE+HsiRslqGlfGd1APmk1FhCwBGkg0bgAB6hXTrqO0ddEz4MN1m0hYqHya0ioHU4n81pPjJi/qlr66QZpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\SimpleTrader\\SimpleTrader.WPF\\SimpleTrader.WPF.csproj",
+  "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\WPFTutorials\\SimpleTrader\\SimpleTrader.WPF\\SimpleTrader.WPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

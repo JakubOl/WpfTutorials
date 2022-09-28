@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BHQYJSMasHXPZcFKZfF8M2bnbxnYDjr5RvbCfpCtQbBhaNeSkwY941ZZq08xEu6CnwV7Xd2Buaw7XU3oTdhvpA==",
+  "dgSpecHash": "bbTVj8H8xsxTJVAN1z6iPrA3xakR3TWzSz0Jy0dpv3UJAyq1Lj8XHzKqyrUEufgvsV8uyoyBHxK/gW+kjXxTUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\SimpleTrader\\SimpleTrader.EntityFramework\\SimpleTrader.EntityFramework.csproj",
+  "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\WPFTutorials\\SimpleTrader\\SimpleTrader.EntityFramework\\SimpleTrader.EntityFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakub\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
