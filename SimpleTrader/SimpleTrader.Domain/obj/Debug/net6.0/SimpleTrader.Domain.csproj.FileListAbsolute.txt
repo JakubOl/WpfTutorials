@@ -1,0 +1,12 @@
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\bin\Debug\net6.0\SimpleTrader.Domain.deps.json
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\bin\Debug\net6.0\SimpleTrader.Domain.dll
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\bin\Debug\net6.0\SimpleTrader.Domain.pdb
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.csproj.AssemblyReference.cache
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.AssemblyInfoInputs.cache
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.AssemblyInfo.cs
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.dll
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\refint\SimpleTrader.Domain.dll
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\SimpleTrader.Domain.pdb
+C:\Users\jakub\Desktop\Main\C#\SimpleTrader\SimpleTrader.Domain\obj\Debug\net6.0\ref\SimpleTrader.Domain.dll
