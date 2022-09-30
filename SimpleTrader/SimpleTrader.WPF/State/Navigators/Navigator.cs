@@ -26,7 +26,7 @@ namespace SimpleTrader.WPF.State.Navigators
             set 
             { 
                 _currentViewModel = value;
-                OnPropertyChanged(nameof(CurrentChangingEventManager));
+                OnPropertyChanged(nameof(CurrentViewModel));
             }
         }
 
