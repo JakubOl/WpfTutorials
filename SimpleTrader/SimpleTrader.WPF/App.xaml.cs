@@ -1,4 +1,5 @@
-﻿using SimpleTrader.WPF.ViewModels;
+﻿using SimpleTrader.FinancialModelingPrepAPI.Services;
+using SimpleTrader.WPF.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -16,6 +17,7 @@ namespace SimpleTrader.WPF
     {
         protected override void OnStartup(StartupEventArgs e)
         {
+
             Window window = new MainWindow();
             window.DataContext = new MainViewModel();
             window.Show();

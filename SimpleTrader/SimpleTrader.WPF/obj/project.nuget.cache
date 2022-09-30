@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rxarhE+HsiRslqGlfGd1APmk1FhCwBGkg0bgAB6hXTrqO0ddEz4MN1m0hYqHya0ioHU4n81pPjJi/qlr66QZpQ==",
+  "dgSpecHash": "BLAFi8t1mbgVb0SlM/LnHDTZ4nfNs2m4Uge7sxqnC3Lwf4THcQFV6TU326EqmFetnUkU12o7lyJw4vSLjugsEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\WPFTutorials\\SimpleTrader\\SimpleTrader.WPF\\SimpleTrader.WPF.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\jakub\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
