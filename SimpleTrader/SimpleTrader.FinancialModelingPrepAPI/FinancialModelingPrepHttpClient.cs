@@ -9,17 +9,21 @@ namespace SimpleTrader.FinancialModelingPrepAPI
 {
     public class FinancialModelingPrepHttpClient : HttpClient
     {
+        private readonly string _apiKey;
+
         public FinancialModelingPrepHttpClient()
         {
             this.BaseAddress = new Uri("https://financialmodelingprep.com//api/v3/");
+            _apiKey = "3532baa7edd9e854c317707d454f3aaa";
         }
 
-        public async Task<T> GetAsync<T>(string uri)
+        public async Task<IEnumerable<T>> GetAsync<T>(string uri)
         {
-            var response = await GetAsync(uri);
+            var response = await GetAsync($"{uri}?apikey={_apiKey}");
             string jsonResponse = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<T>(jsonResponse);
+            var result = JsonConvert.DeserializeObject<IEnumerable<T>>(jsonResponse);
+            return result;
         }
 
     }

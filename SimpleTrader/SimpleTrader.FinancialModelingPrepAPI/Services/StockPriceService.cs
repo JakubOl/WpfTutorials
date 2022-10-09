@@ -13,16 +13,16 @@ namespace SimpleTrader.FinancialModelingPrepAPI.Services
             using (FinancialModelingPrepHttpClient client = new FinancialModelingPrepHttpClient())
             {
                 string apiKey = "3532baa7edd9e854c317707d454f3aaa";
-                string uri = "stock/real-time-price/" + symbol  + "?apikey=" + apiKey;
+                string uri = "quote-short/" + symbol;
 
                 var stockPriceResult = await client.GetAsync<StockPriceResult>(uri);
 
-                if(stockPriceResult.Price == 0)
+                if(stockPriceResult.First().Price == 0)
                 {
                     throw new InvalidSymbolException(symbol);
                 }
 
-                return stockPriceResult.Price;
+                return stockPriceResult.First().Price;
             }
         }
     }
