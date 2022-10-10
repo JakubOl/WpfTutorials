@@ -17,12 +17,12 @@ namespace SimpleTrader.FinancialModelingPrepAPI.Services
 
                 var stockPriceResult = await client.GetAsync<StockPriceResult>(uri);
 
-                if(stockPriceResult.First().Price == 0)
+                if(stockPriceResult.Price == 0)
                 {
                     throw new InvalidSymbolException(symbol);
                 }
 
-                return stockPriceResult.First().Price;
+                return stockPriceResult.Price;
             }
         }
     }

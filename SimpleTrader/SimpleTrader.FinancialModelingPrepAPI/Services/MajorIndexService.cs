@@ -20,9 +20,9 @@ namespace SimpleTrader.FinancialModelingPrepAPI.Services
                 string uri = "majors-indexes/" + GetUriSuffix(indexType);
 
                 var majorIndex = await client.GetAsync<MajorIndex>(uri);
-                majorIndex.First().Type = indexType;
+                majorIndex.Type = indexType;
 
-                return majorIndex.First();
+                return majorIndex;
             }
         }
 

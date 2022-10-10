@@ -17,12 +17,12 @@ namespace SimpleTrader.FinancialModelingPrepAPI
             _apiKey = "3532baa7edd9e854c317707d454f3aaa";
         }
 
-        public async Task<IEnumerable<T>> GetAsync<T>(string uri)
+        public async Task<T> GetAsync<T>(string uri)
         {
             var response = await GetAsync($"{uri}?apikey={_apiKey}");
             string jsonResponse = await response.Content.ReadAsStringAsync();
 
-            var result = JsonConvert.DeserializeObject<IEnumerable<T>>(jsonResponse);
+            var result = JsonConvert.DeserializeObject<T>(jsonResponse);
             return result;
         }
 

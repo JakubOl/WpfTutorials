@@ -1,9 +1,13 @@
-﻿using SimpleTrader.Domain.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
+using SimpleTrader.Domain.Models;
 using SimpleTrader.Domain.Services;
 using SimpleTrader.Domain.Services.TransactionSerivces;
+using SimpleTrader.EntityFramework;
 using SimpleTrader.EntityFramework.Services;
 using SimpleTrader.FinancialModelingPrepAPI.Services;
+using SimpleTrader.WPF.State.Navigators;
 using SimpleTrader.WPF.ViewModels;
+using SimpleTrader.WPF.ViewModels.Factories;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -21,19 +25,36 @@ namespace SimpleTrader.WPF
     {
         protected override async void OnStartup(StartupEventArgs e)
         {
-            IDataService<Account> accountService = new AccountDataSerivce(new EntityFramework.SimpleTraderDbContextFactory());
-            IStockPriceService stockPriceService = new StockPriceService();
-            IBuyStockService buyStockService = new BuyStockService(stockPriceService, accountService);
+            IServiceProvider serviceProvider = CreateServiceProvider();
 
-            Account buyer = await accountService.Get(1);
-
-            await buyStockService.BuyStock(buyer, "T", 50);
-
-            Window window = new MainWindow();
-            window.DataContext = new MainViewModel();
+            Window window = serviceProvider.GetRequiredService<MainWindow>();
             window.Show();
 
             base.OnStartup(e);
+        }
+
+        private IServiceProvider CreateServiceProvider()
+        {
+            IServiceCollection services = new ServiceCollection();
+
+            services.AddSingleton<SimpleTraderDbContextFactory>();
+            services.AddSingleton<IDataService<Account>, AccountDataSerivce>();
+            services.AddSingleton<IStockPriceService, StockPriceService>();
+            services.AddSingleton<IBuyStockService, BuyStockService>();
+            services.AddSingleton<IMajorIndexService, MajorIndexService>();
+
+            services.AddSingleton<ISimpleTraderViewModelAbstractFactory, SimpleTraderViewModelAbstractFactory>();
+            services.AddSingleton<ISimpleTraderViewModelFactory<HomeViewModel>, HomeViewModelFactory>();
+            services.AddSingleton<ISimpleTraderViewModelFactory<PortfolioViewModel>, PortfolioViewModelFactory>();
+            services.AddSingleton<ISimpleTraderViewModelFactory<MajorIndexListingViewModel>, MajorIndexListingViewModelFactory>();
+
+
+            services.AddScoped<INavigator, Navigator>();
+            services.AddScoped<MainViewModel>();
+
+            services.AddScoped<MainWindow>(s =>  new MainWindow(s.GetRequiredService<MainViewModel>()));
+
+            return services.BuildServiceProvider();
         }
     }
 }
