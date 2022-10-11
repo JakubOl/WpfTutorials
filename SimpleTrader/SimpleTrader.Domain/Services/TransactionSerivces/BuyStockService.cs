@@ -30,7 +30,7 @@ namespace SimpleTrader.Domain.Services.TransactionSerivces
                 throw new InsufficientFundsException(buyer.Balance, transactionPrice);
             }
                     
-            AssetTransaction transaction = new AssetTransaction()
+            var transaction = new AssetTransaction()
             {
                 Account = buyer,
                 Asset = new Asset()

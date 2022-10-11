@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using SimpleTrader.Domain.Exceptions;
-using SimpleTrader.Domain.Models;
+﻿using SimpleTrader.Domain.Exceptions;
 using SimpleTrader.Domain.Services;
 using SimpleTrader.FinancialModelingPrepAPI.Results;
 
@@ -10,19 +8,18 @@ namespace SimpleTrader.FinancialModelingPrepAPI.Services
     {
         public async Task<double> GetPrice(string symbol)
         {
-            using (FinancialModelingPrepHttpClient client = new FinancialModelingPrepHttpClient())
+            using (var client = new FinancialModelingPrepHttpClientEnum())
             {
-                string apiKey = "3532baa7edd9e854c317707d454f3aaa";
                 string uri = "quote-short/" + symbol;
 
                 var stockPriceResult = await client.GetAsync<StockPriceResult>(uri);
 
-                if(stockPriceResult.Price == 0)
+                if(stockPriceResult.First().Price == 0)
                 {
                     throw new InvalidSymbolException(symbol);
                 }
 
-                return stockPriceResult.Price;
+                return stockPriceResult.First().Price;
             }
         }
     }
