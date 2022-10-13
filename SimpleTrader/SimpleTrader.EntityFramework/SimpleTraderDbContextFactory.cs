@@ -9,7 +9,7 @@ namespace SimpleTrader.EntityFramework
         {
             var options = new DbContextOptionsBuilder<SimpleTraderDbContext>();
 
-            options.UseSqlServer("Server=localhost;Database=SimpleTrader;Trusted_Connection=True;MultipleActiveResultSets=true");
+            options.UseSqlServer("Server=LTPOL367;Database=SimpleTrader;Trusted_Connection=True;MultipleActiveResultSets=true");
 
             return new SimpleTraderDbContext(options.Options);  
         }

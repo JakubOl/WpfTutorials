@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TnsDDnICpMblUq+P3xVOUwycRIjjXm0DLkyzkBeCahp8qaynqBLf0E25pTiNgMtMx7XRY0BBg0ibpkOqPTne6A==",
+  "dgSpecHash": "SzcbXiW36yJS0hWm87IoRpD2fuNS6zrCsphj0jgBu25eFeszIxITd06G7Z0tFd7X8MgrMEqwcO5fCw1vU+3RSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jakub\\Desktop\\Main\\C#\\WPFTutorials\\SimpleTrader\\SimpleTrader.Domain\\SimpleTrader.Domain.csproj",
+  "projectFilePath": "C:\\Users\\olbrycht.j\\Desktop\\C#\\WPF\\SimpleTrader\\SimpleTrader.Domain\\SimpleTrader.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

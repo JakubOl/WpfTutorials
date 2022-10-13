@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SimpleTrader\SimpleTrader.WPF\obj\Debug\net6.0-windows\
+C:\Users\olbrycht.j\Desktop\C#\WPF\SimpleTrader\SimpleTrader.WPF\obj\Debug\net6.0-windows\
 SimpleTrader.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\jakub\Desktop\Main\C#\WPFTutorials\SimpleTrader\SimpleTrader.WPF\App.xaml
+C:\Users\olbrycht.j\Desktop\C#\WPF\SimpleTrader\SimpleTrader.WPF\App.xaml
 91141644569
 
-281130559894
-218-301272540
+302093625512
+218-1093000256
 Controlls\MajorIndexCard.xaml;Controlls\MajorIndexListing.xaml;Controlls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\BuyView.xaml;Views\HomeView.xaml;Views\PortfolioView.xaml;
 
 True
