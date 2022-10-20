@@ -16,26 +16,34 @@
             <TextBox Width="100" Text="{Binding Symbol, UpdateSourceTrigger=PropertyChanged}"/>
             <Button Margin="10 0 0 0" Content="Search" Command="{Binding SearchSymbolCommand}"/>
         </WrapPanel>
-
-        <WrapPanel Grid.Row="1" Margin="0 10 0 0">
-            <Border BorderBrush="Black" BorderThickness="1" Padding="20">
+        <WrapPanel Grid.Row="1" Margin="0 20 0 0">
+            <WrapPanel.Style>
+                <Style TargetType="WrapPanel">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding SearchResultSymbol}" Value="">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </WrapPanel.Style>
+            <Border BorderBrush="Black" BorderThickness="1" Padding="20" CornerRadius="3 0 0 3">
                 <StackPanel>
-                    <TextBlock HorizontalAlignment="Center" FontSize="32" Text="{Binding Symbol}"/>
+                    <TextBlock HorizontalAlignment="Center" FontSize="32" Text="{Binding SearchResultSymbol}"/>
                     <TextBlock Margin="0 10 0 0" Text="{Binding StockPrice, StringFormat={}{0:C}}"/>
                 </StackPanel>
             </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Padding="20">
+            <Border BorderBrush="Gray" BorderThickness="0 1 1 1" Padding="20" CornerRadius="0 3 3 0">
                 <StackPanel>
                     <WrapPanel Margin="0 10">
                         <TextBlock Width="150" Text="Shares to buy"/>
-                        <TextBox Width="50" Text="{Binding SharesToBuy, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Text="{Binding SharesToBuy, UpdateSourceTrigger=PropertyChanged}"/>
                     </WrapPanel>
                     <WrapPanel Margin="0 10">
                         <TextBlock Width="150" Text="Price per share"/>
-                        <TextBlock Margin="50" Text="{Binding StockPrice, StringFormat={}{0:C}}"/>
+                        <TextBlock Text="{Binding StockPrice, StringFormat={}{0:C}}"/>
                     </WrapPanel>
                     <TextBlock HorizontalAlignment="Center" FontSize="32" Margin="0 10" Text="{Binding TotalPrice, StringFormat={}{0:C}}"/>
-                    <Button Margin="0 10" Content="Buy" Command="{Binding BuyStockCommand}" />
+                    <Button HorizontalAlignment="Center" Margin="0 10" Content="Buy" Command="{Binding BuyStockCommand}" />
                 </StackPanel>
             </Border>
         </WrapPanel>
